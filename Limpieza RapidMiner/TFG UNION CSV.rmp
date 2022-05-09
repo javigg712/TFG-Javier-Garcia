@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.10.006">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.10.006" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve Mejillas" width="90" x="179" y="340">
+        <parameter key="repository_entry" value="../data/Elementos No Manuales/Mejillas"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve ImagenesConfiguracion" width="90" x="45" y="850">
+        <parameter key="repository_entry" value="../data/ImagenesConfiguracion"/>
+      </operator>
+      <operator activated="true" class="blending:rename" compatibility="9.10.006" expanded="true" height="82" name="Mano Activa Inicial" width="90" x="179" y="850">
+        <list key="rename attributes">
+          <parameter key="Imagen" value="Imagen Mano Activa Inicial"/>
+        </list>
+        <parameter key="from_attribute" value=""/>
+        <parameter key="to_attribute" value=""/>
+        <description align="center" color="transparent" colored="false" width="126">faltan las orientaciones</description>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve ImagenesConfiguracion (2)" width="90" x="45" y="952">
+        <parameter key="repository_entry" value="../data/ImagenesConfiguracion"/>
+      </operator>
+      <operator activated="true" class="blending:rename" compatibility="9.10.006" expanded="true" height="82" name="Mano Activa Intermedio" width="90" x="179" y="952">
+        <list key="rename attributes">
+          <parameter key="Imagen" value="Imagen Mano Activa Intermedio"/>
+        </list>
+        <parameter key="from_attribute" value=""/>
+        <parameter key="to_attribute" value=""/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve ImagenesConfiguracion (3)" width="90" x="45" y="1054">
+        <parameter key="repository_entry" value="../data/ImagenesConfiguracion"/>
+      </operator>
+      <operator activated="true" class="blending:rename" compatibility="9.10.006" expanded="true" height="82" name="Mano Activa Final" width="90" x="179" y="1054">
+        <list key="rename attributes">
+          <parameter key="Imagen" value="Imagen Mano Activa Final"/>
+        </list>
+        <parameter key="from_attribute" value=""/>
+        <parameter key="to_attribute" value=""/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve ImagenesConfiguracion (4)" width="90" x="45" y="1156">
+        <parameter key="repository_entry" value="../data/ImagenesConfiguracion"/>
+      </operator>
+      <operator activated="true" class="blending:rename" compatibility="9.10.006" expanded="true" height="82" name="Mano Pasiva Inicial" width="90" x="179" y="1156">
+        <list key="rename attributes">
+          <parameter key="Imagen" value="Imagen Mano Pasiva Inicial"/>
+        </list>
+        <parameter key="from_attribute" value=""/>
+        <parameter key="to_attribute" value=""/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve ImagenesConfiguracion (5)" width="90" x="45" y="1258">
+        <parameter key="repository_entry" value="../data/ImagenesConfiguracion"/>
+      </operator>
+      <operator activated="true" class="blending:rename" compatibility="9.10.006" expanded="true" height="82" name="Mano Pasiva Intermedio" width="90" x="179" y="1258">
+        <list key="rename attributes">
+          <parameter key="Imagen" value="Imagen Mano Pasiva Intermedio"/>
+        </list>
+        <parameter key="from_attribute" value=""/>
+        <parameter key="to_attribute" value=""/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve ImagenesConfiguracion (6)" width="90" x="45" y="1360">
+        <parameter key="repository_entry" value="../data/ImagenesConfiguracion"/>
+      </operator>
+      <operator activated="true" class="blending:rename" compatibility="9.10.006" expanded="true" height="82" name="Mano Pasiva Final" width="90" x="179" y="1360">
+        <list key="rename attributes">
+          <parameter key="Imagen" value="Imagen Mano Pasiva Final"/>
+        </list>
+        <parameter key="from_attribute" value=""/>
+        <parameter key="to_attribute" value=""/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve ImagenesConfiguracion (7)" width="90" x="45" y="1462">
+        <parameter key="repository_entry" value="../data/ImagenesConfiguracion"/>
+      </operator>
+      <operator activated="true" class="blending:rename" compatibility="9.10.006" expanded="true" height="82" name="Mano Activa Inicial Orientacion" width="90" x="179" y="1462">
+        <list key="rename attributes">
+          <parameter key="Imagen" value="Imagen Mano Activa Inicial Orientacion"/>
+        </list>
+        <parameter key="from_attribute" value=""/>
+        <parameter key="to_attribute" value=""/>
+        <description align="center" color="transparent" colored="false" width="126">faltan las orientaciones</description>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve ImagenesConfiguracion (8)" width="90" x="45" y="1564">
+        <parameter key="repository_entry" value="../data/ImagenesConfiguracion"/>
+      </operator>
+      <operator activated="true" class="blending:rename" compatibility="9.10.006" expanded="true" height="82" name="Mano Activa Intermedio Orientacion" width="90" x="179" y="1564">
+        <list key="rename attributes">
+          <parameter key="Imagen" value="Imagen Mano Activa Intermedio Orientacion"/>
+        </list>
+        <parameter key="from_attribute" value=""/>
+        <parameter key="to_attribute" value=""/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve ImagenesConfiguracion (9)" width="90" x="45" y="1666">
+        <parameter key="repository_entry" value="../data/ImagenesConfiguracion"/>
+      </operator>
+      <operator activated="true" class="blending:rename" compatibility="9.10.006" expanded="true" height="82" name="Mano Activa Final Orientacion" width="90" x="179" y="1666">
+        <list key="rename attributes">
+          <parameter key="Imagen" value="Imagen Mano Activa Final Orientacion"/>
+        </list>
+        <parameter key="from_attribute" value=""/>
+        <parameter key="to_attribute" value=""/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve ImagenesConfiguracion (10)" width="90" x="45" y="1768">
+        <parameter key="repository_entry" value="../data/ImagenesConfiguracion"/>
+      </operator>
+      <operator activated="true" class="blending:rename" compatibility="9.10.006" expanded="true" height="82" name="Mano Pasiva Inicial Orientacion" width="90" x="179" y="1768">
+        <list key="rename attributes">
+          <parameter key="Imagen" value="Imagen Mano Pasiva Inicial Orientacion"/>
+        </list>
+        <parameter key="from_attribute" value=""/>
+        <parameter key="to_attribute" value=""/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve ImagenesConfiguracion (11)" width="90" x="45" y="1870">
+        <parameter key="repository_entry" value="../data/ImagenesConfiguracion"/>
+      </operator>
+      <operator activated="true" class="blending:rename" compatibility="9.10.006" expanded="true" height="82" name="Mano Pasiva Intermedio Orientacion" width="90" x="179" y="1870">
+        <list key="rename attributes">
+          <parameter key="Imagen" value="Imagen Mano Pasiva Intermedio Orientacion"/>
+        </list>
+        <parameter key="from_attribute" value=""/>
+        <parameter key="to_attribute" value=""/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve ImagenesConfiguracion (12)" width="90" x="45" y="1972">
+        <parameter key="repository_entry" value="../data/ImagenesConfiguracion"/>
+      </operator>
+      <operator activated="true" class="blending:rename" compatibility="9.10.006" expanded="true" height="82" name="Mano Pasiva Final Orientacion" width="90" x="179" y="1972">
+        <list key="rename attributes">
+          <parameter key="Imagen" value="Imagen Mano Pasiva Final Orientacion"/>
+        </list>
+        <parameter key="from_attribute" value=""/>
+        <parameter key="to_attribute" value=""/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve GeneralLimpio1" width="90" x="45" y="34">
+        <parameter key="repository_entry" value="../data/GeneralLimpio1"/>
+      </operator>
+      <operator activated="true" class="map" compatibility="9.10.006" expanded="true" height="82" name="Map" width="90" x="179" y="34">
+        <parameter key="attribute_filter_type" value="subset"/>
+        <parameter key="attribute" value="Cejas"/>
+        <parameter key="attributes" value="|Cejas|Hombros|Cabeza|Boca"/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <list key="value_mappings">
+          <parameter key="Inclindas" value="Inclinadas"/>
+          <parameter key="Tronco en c&amp;iacute;rculo" value="Tronco en circulo"/>
+          <parameter key="Atr&amp;aacute;s" value="Atras"/>
+          <parameter key="Alternando delante y atr&amp;aacute;s (SIMP&amp;Acute;TICO)" value="Alternando delante y atras (SIMPATICO)"/>
+          <parameter key="S&amp;iacute;" value="Si"/>
+          <parameter key="p+vibraci&amp;oacute;n (DESAPARECER)" value="p+vibracion (DESAPARECER)"/>
+          <parameter key="Ense&amp;ntilde;ar dientes" value="Enseñar dientes"/>
+        </list>
+        <parameter key="consider_regular_expressions" value="false"/>
+        <parameter key="add_default_mapping" value="false"/>
+      </operator>
+      <operator activated="true" class="map" compatibility="9.10.006" expanded="true" height="82" name="Map Palabras Juntas" width="90" x="179" y="136">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="Lema"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="true"/>
+        <list key="value_mappings">
+          <parameter key="tarjetadecredito" value="tarjeta de credito"/>
+          <parameter key="nogustar" value="no gustar"/>
+          <parameter key="metrocubico" value="metro cubico"/>
+          <parameter key="metrocuadrado" value="metro cuadrado"/>
+          <parameter key="hijounico" value="hijo unico"/>
+          <parameter key="hijoadoptivo" value="hijo adoptivo"/>
+          <parameter key="cambiardeopinion" value="cambiar de opinion"/>
+          <parameter key="cafe-con-leche" value="cafe con leche"/>
+          <parameter key="buenasnoches" value="buenas noches"/>
+        </list>
+        <parameter key="consider_regular_expressions" value="false"/>
+        <parameter key="add_default_mapping" value="false"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve Boca" width="90" x="179" y="238">
+        <parameter key="repository_entry" value="../data/Elementos No Manuales/Boca"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve Cabeza" width="90" x="179" y="646">
+        <parameter key="repository_entry" value="../data/Elementos No Manuales/Cabeza"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve Cejas" width="90" x="179" y="544">
+        <parameter key="repository_entry" value="../data/Elementos No Manuales/Cejas"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve Hombros" width="90" x="179" y="748">
+        <parameter key="repository_entry" value="../data/Elementos No Manuales/Hombros"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve Ojos" width="90" x="179" y="442">
+        <parameter key="repository_entry" value="../data/Elementos No Manuales/Ojos"/>
+      </operator>
+      <operator activated="true" class="replace_missing_values" compatibility="9.10.006" expanded="true" height="103" name="Replace Missing Values To String" width="90" x="380" y="34">
+        <parameter key="return_preprocessing_model" value="false"/>
+        <parameter key="create_view" value="false"/>
+        <parameter key="attribute_filter_type" value="subset"/>
+        <parameter key="attribute" value=""/>
+        <parameter key="attributes" value="Boca|Cabeza|Cejas|Hombros|Mejillas|Ojos"/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="default" value="value"/>
+        <list key="columns"/>
+        <parameter key="replenishment_value" value="desconocido"/>
+      </operator>
+      <operator activated="true" class="replace_missing_values" compatibility="9.10.006" expanded="true" height="103" name="Replace Missing Values To 0" width="90" x="514" y="34">
+        <parameter key="return_preprocessing_model" value="false"/>
+        <parameter key="create_view" value="false"/>
+        <parameter key="attribute_filter_type" value="subset"/>
+        <parameter key="attribute" value=""/>
+        <parameter key="attributes" value="Mano activa final|Mano activa final orientacion|Mano activa inicial|Mano activa inicial orientacion|Mano activa intermedio|Mano activa intermedio orientacion|Mano pasiva final|Mano pasiva final orientacion|Mano pasiva inicial|Mano pasiva inicial orientacion|Mano pasiva intermedio|Mano pasiva intermedio orientacion"/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="default" value="zero"/>
+        <list key="columns"/>
+        <parameter key="replenishment_value" value="desconocido"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join Boca" width="90" x="313" y="187">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Boca" value="Nombre"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join Mejillas" width="90" x="313" y="289">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mejillas" value="Nombre"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join Ojos" width="90" x="313" y="391">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Ojos" value="Nombre"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join Cejas" width="90" x="313" y="493">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Cejas" value="Nombre"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join Cabeza" width="90" x="313" y="595">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Cabeza" value="Nombre"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join Hombros" width="90" x="313" y="697">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Hombros" value="Nombre"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join" width="90" x="313" y="799">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mano activa inicial" value="Numero"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join (2)" width="90" x="313" y="901">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mano activa intermedio" value="Numero"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join (3)" width="90" x="313" y="1003">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mano activa final" value="Numero"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join (4)" width="90" x="313" y="1105">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mano pasiva inicial" value="Numero"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join (5)" width="90" x="313" y="1207">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mano pasiva intermedio" value="Numero"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join (6)" width="90" x="313" y="1309">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mano pasiva final" value="Numero"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join (7)" width="90" x="313" y="1411">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mano activa inicial orientacion" value="Numero"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join (8)" width="90" x="313" y="1513">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mano activa intermedio orientacion" value="Numero"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join (9)" width="90" x="313" y="1615">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mano activa final orientacion" value="Numero"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join (10)" width="90" x="313" y="1717">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mano pasiva inicial orientacion" value="Numero"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join (11)" width="90" x="313" y="1819">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mano pasiva intermedio orientacion" value="Numero"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join (12)" width="90" x="313" y="1921">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Mano pasiva final orientacion" value="Numero"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.10.006" expanded="true" height="68" name="Retrieve VidesEsSinTildes" width="90" x="45" y="2074">
+        <parameter key="repository_entry" value="../data/VidesEsSinTildes"/>
+      </operator>
+      <operator activated="true" class="remove_duplicates" compatibility="9.10.006" expanded="true" height="103" name="Remove Duplicates" width="90" x="179" y="2074">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="palabra"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="treat_missing_values_as_duplicates" value="false"/>
+      </operator>
+      <operator activated="true" class="map" compatibility="9.10.006" expanded="true" height="82" name="Map (3)" width="90" x="313" y="2074">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="palabra"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="true"/>
+        <list key="value_mappings">
+          <parameter key="�cuantos a�os tienes?" value="¿cuantos años tienes?"/>
+          <parameter key="�como esta el clima?" value="¿como esta el clima?"/>
+          <parameter key="�a donde vamos?" value="¿a donde vamos?"/>
+        </list>
+        <parameter key="consider_regular_expressions" value="false"/>
+        <parameter key="add_default_mapping" value="false"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.10.006" expanded="true" height="82" name="Replace" width="90" x="447" y="2074">
+        <parameter key="attribute_filter_type" value="all"/>
+        <parameter key="attribute" value=""/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="�"/>
+        <parameter key="replace_by" value="ñ"/>
+      </operator>
+      <operator activated="true" class="select_attributes" compatibility="9.10.006" expanded="true" height="82" name="Select Attributes" width="90" x="581" y="2074">
+        <parameter key="attribute_filter_type" value="subset"/>
+        <parameter key="attribute" value=""/>
+        <parameter key="attributes" value="palabra|video"/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.10.006" expanded="true" height="82" name="Replace (2)" width="90" x="447" y="1921">
+        <parameter key="attribute_filter_type" value="all"/>
+        <parameter key="attribute" value=""/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="�"/>
+        <parameter key="replace_by" value="ñ"/>
+      </operator>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.006" expanded="true" height="82" name="Join (13)" width="90" x="715" y="1972">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="outer"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="Lema" value="palabra"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="write_csv" compatibility="9.10.006" expanded="true" height="82" name="Write CSV" width="90" x="849" y="1972">
+        <parameter key="csv_file" value="/Users/javier/Desktop/Datasets/LSE/Completo Junto.csv"/>
+        <parameter key="column_separator" value=";"/>
+        <parameter key="write_attribute_names" value="true"/>
+        <parameter key="quote_nominal_values" value="true"/>
+        <parameter key="format_date_attributes" value="true"/>
+        <parameter key="date_format" value="yyyy-MM-dd HH:mm:ss"/>
+        <parameter key="append_to_file" value="false"/>
+        <parameter key="encoding" value="SYSTEM"/>
+      </operator>
+      <connect from_op="Retrieve Mejillas" from_port="output" to_op="Join Mejillas" to_port="right"/>
+      <connect from_op="Retrieve ImagenesConfiguracion" from_port="output" to_op="Mano Activa Inicial" to_port="example set input"/>
+      <connect from_op="Mano Activa Inicial" from_port="example set output" to_op="Join" to_port="right"/>
+      <connect from_op="Retrieve ImagenesConfiguracion (2)" from_port="output" to_op="Mano Activa Intermedio" to_port="example set input"/>
+      <connect from_op="Mano Activa Intermedio" from_port="example set output" to_op="Join (2)" to_port="right"/>
+      <connect from_op="Retrieve ImagenesConfiguracion (3)" from_port="output" to_op="Mano Activa Final" to_port="example set input"/>
+      <connect from_op="Mano Activa Final" from_port="example set output" to_op="Join (3)" to_port="right"/>
+      <connect from_op="Retrieve ImagenesConfiguracion (4)" from_port="output" to_op="Mano Pasiva Inicial" to_port="example set input"/>
+      <connect from_op="Mano Pasiva Inicial" from_port="example set output" to_op="Join (4)" to_port="right"/>
+      <connect from_op="Retrieve ImagenesConfiguracion (5)" from_port="output" to_op="Mano Pasiva Intermedio" to_port="example set input"/>
+      <connect from_op="Mano Pasiva Intermedio" from_port="example set output" to_op="Join (5)" to_port="right"/>
+      <connect from_op="Retrieve ImagenesConfiguracion (6)" from_port="output" to_op="Mano Pasiva Final" to_port="example set input"/>
+      <connect from_op="Mano Pasiva Final" from_port="example set output" to_op="Join (6)" to_port="right"/>
+      <connect from_op="Retrieve ImagenesConfiguracion (7)" from_port="output" to_op="Mano Activa Inicial Orientacion" to_port="example set input"/>
+      <connect from_op="Mano Activa Inicial Orientacion" from_port="example set output" to_op="Join (7)" to_port="right"/>
+      <connect from_op="Retrieve ImagenesConfiguracion (8)" from_port="output" to_op="Mano Activa Intermedio Orientacion" to_port="example set input"/>
+      <connect from_op="Mano Activa Intermedio Orientacion" from_port="example set output" to_op="Join (8)" to_port="right"/>
+      <connect from_op="Retrieve ImagenesConfiguracion (9)" from_port="output" to_op="Mano Activa Final Orientacion" to_port="example set input"/>
+      <connect from_op="Mano Activa Final Orientacion" from_port="example set output" to_op="Join (9)" to_port="right"/>
+      <connect from_op="Retrieve ImagenesConfiguracion (10)" from_port="output" to_op="Mano Pasiva Inicial Orientacion" to_port="example set input"/>
+      <connect from_op="Mano Pasiva Inicial Orientacion" from_port="example set output" to_op="Join (10)" to_port="right"/>
+      <connect from_op="Retrieve ImagenesConfiguracion (11)" from_port="output" to_op="Mano Pasiva Intermedio Orientacion" to_port="example set input"/>
+      <connect from_op="Mano Pasiva Intermedio Orientacion" from_port="example set output" to_op="Join (11)" to_port="right"/>
+      <connect from_op="Retrieve ImagenesConfiguracion (12)" from_port="output" to_op="Mano Pasiva Final Orientacion" to_port="example set input"/>
+      <connect from_op="Mano Pasiva Final Orientacion" from_port="example set output" to_op="Join (12)" to_port="right"/>
+      <connect from_op="Retrieve GeneralLimpio1" from_port="output" to_op="Map" to_port="example set input"/>
+      <connect from_op="Map" from_port="example set output" to_op="Map Palabras Juntas" to_port="example set input"/>
+      <connect from_op="Map Palabras Juntas" from_port="example set output" to_op="Replace Missing Values To String" to_port="example set input"/>
+      <connect from_op="Retrieve Boca" from_port="output" to_op="Join Boca" to_port="right"/>
+      <connect from_op="Retrieve Cabeza" from_port="output" to_op="Join Cabeza" to_port="right"/>
+      <connect from_op="Retrieve Cejas" from_port="output" to_op="Join Cejas" to_port="right"/>
+      <connect from_op="Retrieve Hombros" from_port="output" to_op="Join Hombros" to_port="right"/>
+      <connect from_op="Retrieve Ojos" from_port="output" to_op="Join Ojos" to_port="right"/>
+      <connect from_op="Replace Missing Values To String" from_port="example set output" to_op="Replace Missing Values To 0" to_port="example set input"/>
+      <connect from_op="Replace Missing Values To 0" from_port="example set output" to_op="Join Boca" to_port="left"/>
+      <connect from_op="Join Boca" from_port="join" to_op="Join Mejillas" to_port="left"/>
+      <connect from_op="Join Mejillas" from_port="join" to_op="Join Ojos" to_port="left"/>
+      <connect from_op="Join Ojos" from_port="join" to_op="Join Cejas" to_port="left"/>
+      <connect from_op="Join Cejas" from_port="join" to_op="Join Cabeza" to_port="left"/>
+      <connect from_op="Join Cabeza" from_port="join" to_op="Join Hombros" to_port="left"/>
+      <connect from_op="Join Hombros" from_port="join" to_op="Join" to_port="left"/>
+      <connect from_op="Join" from_port="join" to_op="Join (2)" to_port="left"/>
+      <connect from_op="Join (2)" from_port="join" to_op="Join (3)" to_port="left"/>
+      <connect from_op="Join (3)" from_port="join" to_op="Join (4)" to_port="left"/>
+      <connect from_op="Join (4)" from_port="join" to_op="Join (5)" to_port="left"/>
+      <connect from_op="Join (5)" from_port="join" to_op="Join (6)" to_port="left"/>
+      <connect from_op="Join (6)" from_port="join" to_op="Join (7)" to_port="left"/>
+      <connect from_op="Join (7)" from_port="join" to_op="Join (8)" to_port="left"/>
+      <connect from_op="Join (8)" from_port="join" to_op="Join (9)" to_port="left"/>
+      <connect from_op="Join (9)" from_port="join" to_op="Join (10)" to_port="left"/>
+      <connect from_op="Join (10)" from_port="join" to_op="Join (11)" to_port="left"/>
+      <connect from_op="Join (11)" from_port="join" to_op="Join (12)" to_port="left"/>
+      <connect from_op="Join (12)" from_port="join" to_op="Replace (2)" to_port="example set input"/>
+      <connect from_op="Retrieve VidesEsSinTildes" from_port="output" to_op="Remove Duplicates" to_port="example set input"/>
+      <connect from_op="Remove Duplicates" from_port="example set output" to_op="Map (3)" to_port="example set input"/>
+      <connect from_op="Map (3)" from_port="example set output" to_op="Replace" to_port="example set input"/>
+      <connect from_op="Replace" from_port="example set output" to_op="Select Attributes" to_port="example set input"/>
+      <connect from_op="Select Attributes" from_port="example set output" to_op="Join (13)" to_port="right"/>
+      <connect from_op="Replace (2)" from_port="example set output" to_op="Join (13)" to_port="left"/>
+      <connect from_op="Join (13)" from_port="join" to_op="Write CSV" to_port="input"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+    </process>
+  </operator>
+</process>
