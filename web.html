@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        <title> Traductor LSE: de texto a videos </title>
+    
+    <!-- Pyscript -->
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <!--<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />-->
+    
+    <!-- bootstrap for styling , Pyscript can also be used for styling instead of bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <style>
+    
+    body {
+        background-color: #fcfcfc;
+        padding-top: 55px;
+        min-height: 100vh;
+        margin:0;
+        display:flex;
+        flex-direction:column;
+      }
+    </style>  
+    
+</head>
+<body>
+
+</py-script>    
+
+    <div class="container">
+        
+        <h1 class="text-center">
+            Traductor LSE: de texto a videos
+        </h1>
+        <p class="text-center">
+            Proyecto realizado por Javier Garcia Garcia
+        </p>
+        <br />
+        <h1 class="text-center">
+            Instrucciones
+        </h1>
+        <p class="text-center">
+            Antes de comenzar, asegurese de que el texto que desea traducir a LSE sea en castellano.
+        </p>
+        <p class="text-center">
+            Nosotros nos encargaremos de proporcionarle la mejor traduccion de su texto a LSE.
+        </p>
+        <br />
+        <p>
+            <h3 class="text-center">Español</h3>
+        
+        <input id="frase" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Inserte el texto que desea traducir" /></p>
+        <br />
+        <center>
+            <button id="traductor" type="submit"  class="btn btn-info" pys-onClick="traductor">Traducir</button>
+
+        </center>
+        <br />
+        <p>
+        <h3 class="text-center">Traducción</h3>
+        <h5>Palabra a traducir</h5>
+        <textarea id="Palabra" class="form-control" rows="2" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Resultados"></textarea>
+        <h5>Palabra detectada</h5>
+        <textarea id="Detectada" class="form-control" rows="2" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Resultados"></textarea>
+        <h5>Porcentaje de similitud</h5>
+        <textarea id="Porcentaje" class="form-control" rows="2" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Resultados"></textarea>
+        <h5>LSE</h5>
+        <video width="720" height="720" autoplay muted>
+            <source src=".Videos/",Videos,".mp4" type="video/mp4">
+            </video></p>
+        </body>
+        
+    </div>    
+    
+    </body>
+</html>    
